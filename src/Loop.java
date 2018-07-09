@@ -18,5 +18,17 @@ public class Loop {
         for(int y = 10; y < 20; y++) {
             System.out.println("value of x: " + y);
         }
+
+        System.out.println("\nenhanced for");
+        int [] numbers = {10, 20, 30, 40, 50};
+        for(int z : numbers) {
+            System.out.println(z);
+        }
+
+        System.out.println();
+        String [] names = {"James", "Larry", "Tom", "Lacy"};
+        for(String name : names) {
+            System.out.println(name);
+        }
     }
 }
