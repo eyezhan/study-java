@@ -13,5 +13,10 @@ public class Loop {
             System.out.println("value of x: " + x);
             x++;
         } while(x < 20);
+
+        System.out.println("\nfor");
+        for(int y = 10; y < 20; y++) {
+            System.out.println("value of x: " + y);
+        }
     }
 }
