@@ -22,6 +22,9 @@ public class Loop {
         System.out.println("\nenhanced for");
         int [] numbers = {10, 20, 30, 40, 50};
         for(int z : numbers) {
+            if(z == 30) {
+                break;
+            }
             System.out.println(z);
         }
 
