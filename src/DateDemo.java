@@ -15,6 +15,20 @@ public class DateDemo {
         System.out.printf("月/日/年格式：%tD%n", dNow);
         System.out.printf("HH:MM:SS PM格式（12时制）：%tr%n", dNow);
         System.out.printf("HH:MM:SS格式（24时制）：%tT%n", dNow);
-        System.out.printf("HH:MM格式（24时制）：%tR", dNow);
+        System.out.printf("HH:MM格式（24时制）：%tR%n", dNow);
+
+        System.out.printf("%1$s %2$tB %2$td, %2$tY%n", "Due date:", dNow);
+
+        SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+        String input = args.length == 0 ? "1888-11-11" : args[0];
+        System.out.print(input + " Parses as ");
+
+        Date t;
+        try {
+            t = fmt.parse(input);
+            System.out.println(t);
+        } catch (ParseException e) {
+            System.out.println("Unparseable using " + fmt);
+        }
     }
 }
