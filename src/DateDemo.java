@@ -1,9 +1,12 @@
-import java.util.Date;
+import java.util.*;
+import java.text.*;
 
 public class DateDemo {
     public static void main(String[] args) {
-        Date date = new Date();
+        Date dNow = new Date();
 
-        System.out.println(date.toString());
+        System.out.println(dNow.toString());
+        SimpleDateFormat ft = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+        System.out.println("Current Date: " + ft.format(dNow));
     }
 }
