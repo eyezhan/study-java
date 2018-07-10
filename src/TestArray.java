@@ -22,5 +22,10 @@ public class TestArray {
             }
         }
         System.out.println("The max value is " + max);
+
+        // foreach loop
+        for (double element : myList) {
+            System.out.println(element);
+        }
     }
 }
