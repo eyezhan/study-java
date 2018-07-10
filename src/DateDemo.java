@@ -30,5 +30,14 @@ public class DateDemo {
         } catch (ParseException e) {
             System.out.println("Unparseable using " + fmt);
         }
+
+        // sleep demo
+        try {
+            System.out.println(new Date());
+            Thread.sleep(1000 * 3);
+            System.out.println(new Date());
+        } catch (Exception e) {
+            System.out.println("Got an exception!");
+        }
     }
 }
